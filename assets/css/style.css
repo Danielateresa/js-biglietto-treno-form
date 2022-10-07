@@ -43,4 +43,8 @@ h1 {
 
 
 /*#egion footer*/
+.footer_menu ul {
+    list-style: none;
+}
+
 /*#endregion footer*/
