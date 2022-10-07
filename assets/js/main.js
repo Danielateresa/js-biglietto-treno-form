@@ -15,11 +15,11 @@ Questo richiederà un minimo di ricerca.
 
 
 //chiedere all'utente i km da percorrere
-const km = Number(prompt("Quanti km dovrai percorrere?"));
+const km = document.querySelector('distance');
 console.log(km);
 
 //chiedere all'utente l'età del passeggero
-const passengerAge = Number(prompt("Quanti anni ha il passeggero?"));
+const passengerAge = document.querySelector('age');
 console.log(passengerAge);
 
 //calcolare il costo del biglietto in base ai km (0.21 € al km)
