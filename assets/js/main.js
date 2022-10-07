@@ -13,8 +13,10 @@ Il riepilogo dei dati e l'output del prezzo finale, andranno quindi stampati in 
 Questo richiederà un minimo di ricerca.
 */
 
+//racchiudo l'id del pulsante in una variabile per poi utilizzarla 
 const resultButton = document.getElementById('button');
 
+//al click sul pulsante..
 resultButton.addEventListener('click', function () {
     //console.log('hai cliccato');
 
@@ -39,12 +41,15 @@ resultButton.addEventListener('click', function () {
 
     if (passengerAge < 18) {
         console.log('Dato che sei minorenne, il tuo biglietto scontato costerà €' + priceMinors);
+        //stampo a schermo inserendo nel DOM il risultato
         document.getElementById('final_price').innerHTML = 'Dato che sei minorenne, il tuo biglietto scontato costerà €' + priceMinors;
     } else if (passengerAge > 65) {
         console.log('Dato che hai più di 65 anni, il tuo biglietto scontato costerà €' + priceOver65);
+        //stampo a schermo inserendo nel DOM il risultato
         document.getElementById('final_price').innerHTML = 'Dato che hai più di 65 anni, il tuo biglietto scontato costerà €' + priceOver65;
     } else {
         console.log('Il tuo biglietto costerà €' + price);
+        //stampo a schermo inserendo nel DOM il risultato
         document.getElementById('final_price').innerHTML = 'Il tuo biglietto costerà €' + price;
     }
 })
