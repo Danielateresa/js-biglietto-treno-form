@@ -14,33 +14,41 @@ Questo richiederà un minimo di ricerca.
 */
 
 const resultButton = document.getElementById('button');
+
 resultButton.addEventListener('click', function () {
     //console.log('hai cliccato');
+
+    //prendo il valore immesso nell'imput distance
     const km = document.getElementById('distance').value;
     console.log(km);
+
+    //calcolare il costo del biglietto in base ai km (0.21 € al km)
     const price = km * 0.21;
+
+    //prendo il valore immesso nell'imput age
+    const passengerAge = document.getElementById('age').value;
+    console.log(passengerAge);
+
+    //va applicato uno sconto 10del 20% per i minorenni
+    discountMinors = price * 0.20;
+    priceMinors = price - discountMinors;
+
+    //va applicato uno sconto del 40% per gli over 65.
+    discountOver65 = price * 0.40;
+    priceOver65 = price - discountOver65;
+
+    if (passengerAge < 18) {
+        console.log("Dato che sei minorenne, il tuo biglietto scontato costerà €" + priceMinors);
+    } else if (passengerAge > 65) {
+        console.log("Dato che hai più di 65 anni, il tuo biglietto scontato costerà €" + priceOver65);
+    } else {
+        console.log("Il tuo biglietto costerà €" + price);
+    }
 })
 
 
 
-// console.log(passengerAge);
-
-// //calcolare il costo del biglietto in base ai km (0.21 € al km)
-//
-// //va applicato uno sconto 10del 20% per i minorenni
-// discountMinors = price * 0.20;
-// priceMinors = price - discountMinors;
-// //va applicato uno sconto del 40% per gli over 65.
-// discountOver65 = price * 0.40;
-// priceOver65 = price - discountOver65;
 
 
-// if (passengerAge < 18) {
-//     console.log("Dato che sei minorenne, il tuo biglietto scontato costerà €" + priceMinors);
-// } else if (passengerAge > 65) {
-//     console.log("Dato che hai più di 65 anni, il tuo biglietto scontato costerà €" + priceOver65);
-// } else {
-//     console.log("Il tuo biglietto costerà €" + price);
-// }
 
 
