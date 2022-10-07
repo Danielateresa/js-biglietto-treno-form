@@ -31,6 +31,15 @@ button {
     width: 250px;
 }
 
+.menu_drop {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    background-color: white;
+    padding: 20px;
+}
+
+
 /*#region jumbotron*/
 .jumbotron {
     height: 400px;

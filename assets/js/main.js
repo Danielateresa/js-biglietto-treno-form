@@ -54,6 +54,12 @@ resultButton.addEventListener('click', function () {
     }
 })
 
+const burgerMenuEl = document.querySelector('.burger_menu');
+
+burgerMenuEl.addEventListener('click', function () {
+    console.log('ciao');
+    document.querySelector('.menu_drop').style.display = 'block';
+})
 
 
 
