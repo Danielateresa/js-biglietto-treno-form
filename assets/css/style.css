@@ -16,11 +16,16 @@ nav a {
     margin-left: 20px;
 }
 
-h1 {
-    color: #00665b;
+nav a:hover {
+    color: #d0142c;
 }
 
 /*#endregion header*/
+
+/*#region main*/
+h1 {
+    color: #00665b;
+}
 
 /*#region jumbotron*/
 .jumbotron {
@@ -32,3 +37,10 @@ h1 {
 }
 
 /*#endregion jumbotron*/
+.form-control {
+    width: 200px;
+}
+
+
+/*#egion footer*/
+/*#endregion footer*/

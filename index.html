@@ -20,9 +20,9 @@
     <body>
 
 
-        <header class="site_header">
+        <header class="site_header fixed-top bg-white">
             <nav class="d-flex align-items-center justify-content-between
-                px-5 py-3">
+                px-5 py-3 ">
                 <img
                     src="./assets/img/ferrovieLogo.png"
                     alt="logo">
@@ -36,39 +36,72 @@
         </header>
         <!-- /header
              -->
-        <main class="bg-light text-black-50">
-            <div class="jumbotron">
-                <div>
-
+        <main class="text-black-50">
+            <div class="jumbotron d-flex justify-content-center
+                align-items-center">
+                <div class="">
+                    <h2 class="text-white">L'Italia da
+                        scoprire</h2>
                 </div>
             </div>
-
-            <div class="container py-5">
+            <section class=" best_prices bg-light py-5">
                 <h1 class="mb-5 text-center">Viaggia con i migliori prezzi</h1>
-                <div class="box_km">
-                    <h2>Inserisci i km da percorrere</h2>
-                    <input type="text" name="distance" id="distance"
-                        class="form-control">
-                </div>
-                <!-- /box_km -->
+                <div class="container">
+                    <div class="row row-cols-2 upper">
+                        <div class="col box_km ">
+                            <h3>Inserisci i km da percorrere</h3>
+                            <input type="text" name="distance" id="distance"
+                                class="form-control">
+                        </div>
+                        <!-- /box_km -->
 
-                <div class="box_age">
-                    <h2>Inserisci l'età del passeggero</h2>
-                    <input type="text" name="age" id="age"
-                        class="form-control">
+                        <div class="col box_age">
+                            <h3>Inserisci l'età del passeggero</h3>
+                            <input type="text" name="age" id="age"
+                                class="form-control">
+                        </div>
+                        <!-- /box_age -->
+                    </div>
+                    <!-- /upper -->
+                    <div class="bottom mt-5">
+                        <button class="btn btn-success rounded-5"
+                            id="button">Calcola
+                            il
+                            costo del tuo biglietto</button>
+                        <div class="price_box pt-4">
+                            <h3>Prezzo della tratta</h3>
+                            <hr>
+                            <h3 class="fw-bold" id="final_price"></h3>
+                        </div>
+                        <!-- /price_box -->
+                    </div>
+                    <!-- /bottom -->
                 </div>
-                <!-- /box_age -->
-
-                <button id="button">Calcola il costo del tuo biglietto</button>
-                <div class="price_box">
-                    <h3>Prezzo della tratta</h3>
-                    <p id="final_price"></p>
-                </div>
-                <!-- /price_box -->
-            </div>
-            <!-- /container -->
+                <!-- /container -->
+            </section>
+            <!-- /best_prices -->
         </main>
         <!-- /main -->
+        <footer class="site_footer bg-white">
+
+            <div class="menu_footer fw-bold">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Chi siamo</a>
+                    </li>
+                    <li>
+                        <a href="#">Assistenza</a>
+                    </li>
+                    <li>
+                        <a href="#">Sconti speciali</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- /site_footer -->
 
 
         <!-- Bootstrap JavaScript Libraries -->
