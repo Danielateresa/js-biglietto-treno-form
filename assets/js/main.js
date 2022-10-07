@@ -31,18 +31,21 @@ resultButton.addEventListener('click', function () {
 
     //va applicato uno sconto 10del 20% per i minorenni
     discountMinors = price * 0.20;
-    priceMinors = price - discountMinors;
+    priceMinors = price - discountMinors.toFixed(2);
 
     //va applicato uno sconto del 40% per gli over 65.
     discountOver65 = price * 0.40;
-    priceOver65 = price - discountOver65;
+    priceOver65 = price - discountOver65.toFixed(2);
 
     if (passengerAge < 18) {
-        console.log("Dato che sei minorenne, il tuo biglietto scontato costerà €" + priceMinors);
+        console.log('Dato che sei minorenne, il tuo biglietto scontato costerà €' + priceMinors);
+        document.getElementById('final_price').innerHTML = 'Dato che sei minorenne, il tuo biglietto scontato costerà €' + priceMinors;
     } else if (passengerAge > 65) {
-        console.log("Dato che hai più di 65 anni, il tuo biglietto scontato costerà €" + priceOver65);
+        console.log('Dato che hai più di 65 anni, il tuo biglietto scontato costerà €' + priceOver65);
+        document.getElementById('final_price').innerHTML = 'Dato che hai più di 65 anni, il tuo biglietto scontato costerà €' + priceOver65;
     } else {
-        console.log("Il tuo biglietto costerà €" + price);
+        console.log('Il tuo biglietto costerà €' + price);
+        document.getElementById('final_price').innerHTML = 'Il tuo biglietto costerà €' + price;
     }
 })
 
