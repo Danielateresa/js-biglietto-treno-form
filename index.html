@@ -19,22 +19,49 @@
 
     <body>
 
-        <main>
-            <div class="container">
-                <h2>Inserisci i km da percorrere</h2>
-                <input type="text" name="distance" id="distance"
-                    class="form-control">
-                <h2>Inserisci l'età del passeggero</h2>
-                <input type="text" name="age" id="age"
-                    class="form-control">
-                <button id="button">Clicca qui</button>
 
+        <header class="site_header">
+            <nav class="d-flex align-items-center justify-content-between
+                px-5 py-3">
+                <img
+                    src="./assets/img/ferrovieLogo.png"
+                    alt="logo">
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Chi siamo</a>
+                    <a href="#">Assistenza</a>
+                    <a href="#">Sconti speciali</a>
+                </div>
+            </nav>
+        </header>
+        <!-- /header
+             -->
+        <main class="bg-light py-5">
+            <div class="container">
+                <div class="box_km">
+                    <h2>Inserisci i km da percorrere</h2>
+                    <input type="text" name="distance" id="distance"
+                        class="form-control">
+                </div>
+                <!-- /box_km -->
+
+                <div class="box_age">
+                    <h2>Inserisci l'età del passeggero</h2>
+                    <input type="text" name="age" id="age"
+                        class="form-control">
+                </div>
+                <!-- /box_age -->
+
+                <button id="button">Calcola il costo del tuo biglietto</button>
                 <div class="price_box">
                     <h3>Prezzo della tratta</h3>
                     <p id="final_price"></p>
                 </div>
+                <!-- /price_box -->
             </div>
+            <!-- /container -->
         </main>
+        <!-- /main -->
 
 
         <!-- Bootstrap JavaScript Libraries -->

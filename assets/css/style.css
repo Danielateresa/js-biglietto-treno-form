@@ -1,0 +1,13 @@
+img {
+    max-width: 100%;
+}
+
+header img {
+    width: 200px;
+}
+
+nav a {
+    color: #00665b;
+    text-decoration: none;
+    margin-left: 20px;
+}
