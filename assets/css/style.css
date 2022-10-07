@@ -1,7 +1,11 @@
+/*#region common*/
 img {
     max-width: 100%;
 }
 
+/*#endregion common*/
+
+/*#region header*/
 header img {
     width: 200px;
 }
@@ -11,3 +15,20 @@ nav a {
     text-decoration: none;
     margin-left: 20px;
 }
+
+h1 {
+    color: #00665b;
+}
+
+/*#endregion header*/
+
+/*#region jumbotron*/
+.jumbotron {
+    height: 400px;
+    background-image: url(../img/citta-piu-grande-italia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*#endregion jumbotron*/
