@@ -47,28 +47,31 @@
             <section class=" best_prices bg-light py-5">
                 <h1 class="mb-5 text-center">Viaggia con i migliori prezzi</h1>
                 <div class="container">
-                    <div class="row row-cols-2 upper">
-                        <div class="col box_km ">
-                            <h3>Inserisci i km da percorrere</h3>
+                    <div class="row row-cols-1 row-cols-md-2 upper text-center
+                        text-md-start">
+                        <div class="col box_km mb-3">
+                            <h3 class="pb-3">Inserisci i km da percorrere</h3>
                             <input type="text" name="distance" id="distance"
-                                class="form-control">
+                                class="form-control m-auto m-md-0">
                         </div>
                         <!-- /box_km -->
 
-                        <div class="col box_age">
-                            <h3>Inserisci l'età del passeggero</h3>
+                        <div class="col box_age m-auto">
+                            <h3 class="pb-3">Inserisci l'età del passeggero</h3>
                             <input type="text" name="age" id="age"
-                                class="form-control">
+                                class="form-control m-auto m-md-0">
                         </div>
                         <!-- /box_age -->
                     </div>
                     <!-- /upper -->
-                    <div class="bottom mt-5">
-                        <button class="btn btn-success rounded-5"
+                    <div class="bottom mt-5 d-flex flex-column
+                        justify-content-center d-md-block">
+                        <button class="btn btn-success rounded-5
+                            align-self-center"
                             id="button">Calcola
                             il
                             costo del tuo biglietto</button>
-                        <div class="price_box pt-4">
+                        <div class="price_box pt-4 text-center text-md-start">
                             <h3>Prezzo della tratta</h3>
 
                             <h3 class="fw-bold" id="final_price"></h3>

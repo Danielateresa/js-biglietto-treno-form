@@ -27,6 +27,10 @@ h1 {
     color: #00665b;
 }
 
+button {
+    width: 250px;
+}
+
 /*#region jumbotron*/
 .jumbotron {
     height: 400px;
